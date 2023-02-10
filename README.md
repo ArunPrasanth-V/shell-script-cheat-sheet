@@ -34,3 +34,7 @@
    -r = search in current directory and sub directory aswell
    -l = if match display only the file name
    -h = to hide file name
+```
+# Example
+```sh
+grep -r 'HANDLE REQUEST CHANGE.*arunjavaserver' ./logs/serverout.txt
