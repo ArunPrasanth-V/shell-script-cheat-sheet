@@ -38,3 +38,4 @@
 # Example
 ```sh
 grep -r 'HANDLE REQUEST CHANGE.*arunjavaserver' ./logs/serverout.txt
+ls -lh lib/test.jar   o/p: -rw-r--r-- 1 sas sas 1.3M Feb 10 10:11 lib/test.jar
