@@ -66,3 +66,17 @@ grep -E "java|class" file.txt(give Multiple String in s pattern)
          eg: 'jk{3,4,1}' k contains 1times or 3 or 4.
              "jk{2,}" k contains minimum 2 times max any number of time.
  - [[:alpha:]], [[:blank:]], [[:digit:]], [[:lower:]], [[:upper:]], [[:space:]] 
+```
+# Cut command :
+- it is a powerful tool to extract parts of each line from a file.
+```
+eg: 
+   - cut -c 4,6 log/log.txt  //get 4 ,6 char from the file
+             -7               //start form 1 till 7
+             5-               //start from 5 till end
+             
+   - cut command is mostly useful in delimitor
+       cut -f 2 filed.tzt
+   - delimitor
+      cut -d ':' dlmr.txt (NOTE : delemetor should be 1 character).
+      
