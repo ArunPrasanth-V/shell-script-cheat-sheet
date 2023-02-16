@@ -68,15 +68,23 @@ grep -E "java|class" file.txt(give Multiple String in s pattern)
  - [[:alpha:]], [[:blank:]], [[:digit:]], [[:lower:]], [[:upper:]], [[:space:]] 
 ```
 # Cut command :
-- it is a powerful tool to extract parts of each line from a file.
+- it is a powerful tool to extract parts of each line from a file
+- the default field delimitor is tab ` `
+- but we can give custom by -d '-'
+- Before cut command if you enter `Use --complement` if give opposite of that command
 ```
 eg: 
    - cut -c 4,6 log/log.txt  //get 4 ,6 char from the file
              -7               //start form 1 till 7
              5-               //start from 5 till end
-             
+       
    - cut command is mostly useful in delimitor
        cut -f 2 filed.tzt
    - delimitor
       cut -d ':' dlmr.txt (NOTE : delemetor should be 1 character).
-      
+    
+    -s
+     cut -sf table.txt (print the line in which we have fild or delimitor )
+    
+     cut -d ':' -f 2 log.txt
+ 
