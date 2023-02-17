@@ -87,4 +87,7 @@ eg:
      cut -sf table.txt (print the line in which we have fild or delimitor )
     
      cut -d ':' -f 2 log.txt
- 
+```
+# AWK command :
+  awk `{ print $1,$3 }` log.txt
+   
