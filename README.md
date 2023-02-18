@@ -107,3 +107,7 @@ eg:
 ls -lrt | tee file.txt 
           tee -a file.txt (append in file content).
 ```
+
+
+scripting 
+s=1 both are diff '$s' "$s"
