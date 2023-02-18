@@ -1,4 +1,4 @@
-# shell-script-cheat-sheet
+# shell-script-cheat-sheet  #!/usr/bin/env bash
 ## Read a file with conditions
 ```using more, head, tail, grep, awk, sed```<br>
    ### more
@@ -131,3 +131,23 @@ EOE
 ```
 echo "Hello word" | tr [a-z] [A-Z]  (or) tr [a-z] [A-Z] <<< "Hello word"
 ```
+
+
+#MultiLine Command
+```<< mycommand
+ gpnba;abnaor
+ inbpabniopr   
+mycommand
+```
+:'
+arun is a cool programmer
+why he always coding or do leaning
+he is a developer
+'
+set -n #check once the sytax in the start of runing script
+set -x #before executing the command it showing what it is going to execute.
+set -e #if any command file then it stop it exeution.
+set -v 
+
+we can give while excuting our script file
+like : bash =x debug.sh
