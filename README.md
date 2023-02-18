@@ -23,7 +23,7 @@
   
    ## Options :
    -i = ignore the case sensitivity
-   -w = word matching
+   -w = print only word matching
    -v = display the line that not having the word
    -o = print only exact matching words
    -n = display the matched line number
@@ -144,10 +144,10 @@ arun is a cool programmer
 why he always coding or do leaning
 he is a developer
 '
-set -n #check once the sytax in the start of runing script
-set -x #before executing the command it showing what it is going to execute.
+set -n #check once the sytax.before excuting script.
+set -x #before executing the command will shows what it is going to execute.
 set -e #if any command file then it stop it exeution.
 set -v 
 
 we can give while excuting our script file
-like : bash =x debug.sh
+like : bash -x debug.sh
