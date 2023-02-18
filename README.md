@@ -134,20 +134,25 @@ echo "Hello word" | tr [a-z] [A-Z]  (or) tr [a-z] [A-Z] <<< "Hello word"
 
 
 #MultiLine Command
-```<< mycommand
+/<< mycommand
  gpnba;abnaor
  inbpabniopr   
 mycommand
+
 ```
 :'
 arun is a cool programmer
 why he always coding or do leaning
 he is a developer
 '
+```
+```
 set -n #check once the sytax.before excuting script.
 set -x #before executing the command will shows what it is going to execute.
 set -e #if any command file then it stop it exeution.
 set -v 
-
+```
+```
 we can give while excuting our script file
 like : bash -x debug.sh
+```
