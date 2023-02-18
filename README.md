@@ -90,7 +90,8 @@ eg:
 ```
 # AWK command :
 ```
- - awk `{ print $1,$3,NR,NF }` log.txt
+ - awk '{ print $1,$3,NR,NF }' log.txt
+ - awk '/Active/ { pint }'  #print the line contains Active.
  - NR -> so.no
  - NF -> no of column in that line.
 ```
@@ -111,3 +112,22 @@ ls -lrt | tee file.txt
 
 scripting 
 s=1 both are diff '$s' "$s"
+-n won't send curser to next line
+
+#Multiline Block
+```
+command << DELIMITER
+line-1
+line-2
+line-3
+DELIMITER
+```
+eg:
+cat << EOF > file.txt  #redirecting this output to another command input
+The user is $USER
+The home for this $USER is $HOME
+EOE
+
+```
+echo "Hello word" | tr [a-z] [A-Z]  (or) tr [a-z] [A-Z] <<< "Hello word"
+```
