@@ -89,5 +89,21 @@ eg:
      cut -d ':' -f 2 log.txt
 ```
 # AWK command :
-  awk `{ print $1,$3 }` log.txt
-   
+```
+ - awk `{ print $1,$3,NR,NF }` log.txt
+ - NR -> so.no
+ - NF -> no of column in that line.
+```
+# tr command
+  ```
+ - tr '[:lower:] [:upper:]' <file.txt
+ - tr 'i' 'I' <file.txt
+ - cat file.txt | tr " " " space "
+ - [:lower:],[a-z],[:upper:], [A-Z], [:digit:], [0-9],[:space:]
+  -tr -d ','
+  ```
+# tee command
+```
+ls -lrt | tee file.txt 
+          tee -a file.txt (append in file content).
+```
