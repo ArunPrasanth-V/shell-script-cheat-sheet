@@ -39,4 +39,5 @@
    ```
   - (()) //process only integer values
   - bc<<<"scale=1;$y/$x" // process float value 
+  - c=$((a+b))
   ```
