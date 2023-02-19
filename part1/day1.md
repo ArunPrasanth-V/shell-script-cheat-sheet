@@ -41,3 +41,23 @@
   - bc<<<"scale=1;$y/$x" // process float value 
   - c=$((a+b))
   ```
+## Case
+```
+case $c in
+        1)
+                echo "add $((a+b))"
+                ;;
+        2)
+                echo "sub $((a-b))"
+                ;;
+        3)
+                echo "mul $((a*b))"
+                ;;
+        4)
+                echo "div $((a/b))"
+                ;;
+        *)
+                echo "invalid option"
+                ;;
+esac
+```
