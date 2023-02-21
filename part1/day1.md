@@ -61,3 +61,23 @@ case $c in
                 ;;
 esac
 ```
+## Test command  [[ ]]
+```
+## Numbers
+      - [[ int 1 -eq int2 ]] //if true return 0
+      -ne //not equal
+      -lt //less then
+      -le //less then or equal
+      -gt //greater then 
+      -ge //greater then or equal
+      -eg //equal 
+      eg: [[ ! 1 eq 1 ]]
+  ```
+  ## command chaining operator
+      - ; , &&, ||, && ||
+    -> cmd1 ;cmd2 ->run cmd 1 and cmd 2 regard less of the failure of cmd1.
+    -> cmd1 &&cmd2 ->one should be success then only two
+    -> cmd1 || cmd2 -run cmd two only if cnd one failed
+    -> cmd1 && cmd2 || -> cmd 3 will execute if cmd 1 fails
+      
+      
