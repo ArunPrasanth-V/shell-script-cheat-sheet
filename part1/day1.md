@@ -1,3 +1,4 @@
+``` 2>/dev/null 1>/dev/null ```
 # String
 ```
 - find length=${#name}
@@ -74,10 +75,47 @@ esac
       eg: [[ ! 1 eq 1 ]]
   ```
   ## command chaining operator
-      - ; , &&, ||, && ||
+ ```
+   - ; , &&, ||, && ||
     -> cmd1 ;cmd2 ->run cmd 1 and cmd 2 regard less of the failure of cmd1.
     -> cmd1 &&cmd2 ->one should be success then only two
     -> cmd1 || cmd2 -run cmd two only if cnd one failed
-    -> cmd1 && cmd2 || -> cmd 3 will execute if cmd 1 fails
+    -> cmd1 && cmd2 ||cmd 3 -> will execute if cmd 1 fails
       
+  ```
+  ## block of code
+     ```
+     -> { pws;ls;data }
+     
+     -> which docker && { echo "docker installed";run docker }
+     ```
+  
+  ## if condition
+   ```
+   Syntax :
+     cmd1 && cmd2
+     ------
+            if cmd1
+            then
+              cmd2
+            fi
+     ------
+            if [[ $? -eq 0 ]] //for comparation and file test should use [[]]
+            then
+             echo "success"
+            fi
+      ------
       
+   ```
+  ## if else statement
+  ```
+      -> cmd1 && cmd2 || cmd3
+      
+      if cmd 1
+      then
+        cmd2
+      else
+        cmd3
+       fi
+  ```
+  
