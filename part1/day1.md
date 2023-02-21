@@ -1,4 +1,5 @@
 ``` 2>/dev/null 1>/dev/null ```
+``` exit 1 //any non 0 value```
 # String
 ```
 - find length=${#name}
@@ -113,9 +114,28 @@ esac
       
       if cmd 1
       then
-        cmd2
-      else
-        cmd3
+            cmd2
+      elseif
+      then 
+            cmd
+       else
+            cmd3
        fi
   ```
-  
+  ## identify that current user is root user
+    ```
+    'id -u' (shows number), 'id -un' (shows the user name).
+    
+    ```
+  ## Logical Operators 
+  ```
+   AND -> &&, -q
+   OR  -> ||, -o
+   NOT -> !
+   
+   eg: [[ $a -gr $b && $a ls 100 ]],
+        [ $a -gr $b -a $a ls 100 ]
+        [[ $ip = "yes" ]]
+        [[ $ip =~ y|yes ]] //should not use quotation.
+     
+  ```
