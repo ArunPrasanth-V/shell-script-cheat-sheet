@@ -39,4 +39,30 @@
  echo ${!arr[@]} //print index
  echo ${arr[*]}  //print value
  ```
+# loops
+ ```
+ 1)
  
+ for i in $(ls) 1 2 3 4 
+ do
+    #logic  here.
+ done
+ 
+ 2) c type for loop
+ for(( initialization; condition; increment/decremet))
+ do
+     //logic
+ done
+ -----------------
+#!/bin/bash
+i=0 
+for((;;))
+do
+    echo $i
+    if [[ $i -eq 10 ]]
+     then
+       break
+    fi
+    ((i++))
+ done
+ ```
