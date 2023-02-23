@@ -66,3 +66,4 @@ do
     ((i++))
  done
  ```
+# diff "$@", "$*" (1 3 4 5) ->take as a single line, [$@and $*] ->take a single line even 1 2 "3 4" 5. it process separately.
