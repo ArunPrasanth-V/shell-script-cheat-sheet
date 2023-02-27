@@ -76,4 +76,96 @@ for i in ${arr}
 do
   #login 
  done
+``` 
+# while loop 
+ ```
+ while true                while :
+ do                        do
+  #logic                    #logic
+ done                      done
+ ```
+ 
+```
+#!/bin/bash
+
+filename="rootornot.sh"
+while  read i
+do
+        echo "$i"
+done < $filename  #take line form this file.
+```
+```
+# IFS - internal field seperator. ' '(space)
+old_ifs=$IFS
+awk 'NR!=!1 {print}' |while IFS="," f1 f2 f3 f4 # f1 f2 is very important.
+do
+ echo $f3
+done
+IFS=$old_ifs
+```
+
+# Functions
+
+```
+mycode()
+{
+  local p=10
+  read -p "Enter the number 1" num1
+  read -p "Enter the number 2" num2
+}
+mycode
+    (or)
+function mycode
+{
+  read -p "Enter the number 1" num1
+  read -p "Enter the number 2" num2
+}
+```
+```
+#!/bin/bash
+func()
+{
+ local n=5
+ echo $n
+}
+c=$(func)
+echo $c
+    (or)
+
+#!/bin/bash
+func()
+{
+ local n=5
+ return $n
+}
+func
+c=$? # return the o/p of the func function.
+echo $c
+```
+
+
+# parsinf parameter 
+```
+#!/bin/bash
+add()
+{
+ local c=$(($1+$2))
+  echo $c
+}
+echo $(add 5 4)
+```
+
+# printf command 
+```
+- By default it not sending curser to next line.
+adv:
+  - we can format the output.
+```
+
+```
+printf "%113 s" " " |tr " " "-"
+```
+
+```
+ %% for percent % symbol
 ```
