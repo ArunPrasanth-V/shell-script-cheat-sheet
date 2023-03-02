@@ -33,7 +33,7 @@ sed -i '4,9d' file.txt //will remove the line in the file itself.
 sed -i.back '3,$d' file.txt //will store the backup file.
 
 ```
-# Search content :
+# Search content :  ! ->not having this word in line
 ```
 sed -n '/if/p' file.txt // seach for word if.
 
@@ -46,7 +46,11 @@ sed -n "/$name/p" file.txt
 
 sed '/echo/d' file.txt   //delete the line which are having echo.
 
-sed '/echo/!d' file.txt //delete the line not having echo.
+sed '/echo/!d' file.txt //delete the line not having echo. 
+
+
+# quey get line which having Pool and should not InterCommConnPool.
+   cmd: grep -ri 'pool' | sed -n '/InterCommConnPool/!p'
 
 ```
 
