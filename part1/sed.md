@@ -1,4 +1,4 @@
-# sed
+# sed   i,a,d
 ### syntax
 ```
 sed [option] 'commands' [file-to-with-sed]
@@ -64,3 +64,41 @@ sed '/echo/!d' file.txt //delete the line not having echo.
  
  
 ```
+# insertion or deletion:   i->insert before line, a-> insert after line
+
+### syntax insert a new line (sed 'line_noi' file_name)
+```
+sed '1i this is the line ' file.txt
+sed '$a insert this setance in last line' file.txt
+
+sed '/arun/i this line' file.txt //insert 'this line' before arun in the given file
+
+in the same way delete works
+```
+# regex 
+```-> match for space
+ 
+\s [sed -n '/\s/p' ex.txt]
+\t -tab
+.  -match any character
+*  - 0 (or) any number of times
+\+  - 1 (or) more
+\?  - 0 (or) 1 time.
+sed -n '/p[ou]t/p' file.txt  //output put,pot.
+```
+```
+ ^put -> should contains at the starting
+ put$ -> should contains at the endinge
+ ^$ ->empty line
+```
+```
+[] -->Matches any single character in a list.
+[a-z]
+[a-ci-ms-z]
+
+{} -> sed -n '/this\{3\}/p' file.txt, sed -n '/this\{3,\}/p' file.txt
+() -> sed -n '/\(arr\)\{2\}/p' file.txt  eg:print the line conatains arr two times
+      sed -n '/\(arr\)\+/p'
+      
+```
+
