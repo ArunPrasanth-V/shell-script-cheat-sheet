@@ -34,7 +34,7 @@
    -r = search in current directory and sub directory aswell
    -l = if match display only the file name
    -h = to hide file name
-   -t = display only the file name where the pattern is matching
+   -T = option is used to treat the input file as a text file
 ```
 # Example
 ```sh
