@@ -43,6 +43,13 @@
   - bc<<<"scale=1;$y/$x" // process float value 
   - c=$((a+b))
   ```
+  
+```
+exp=5+50*3/20 + (19*2)/7
+#!/bin/bash
+read exp
+bc<<<"scale=3;$exp"
+  ```
 ## Case
 ```
 case $c in
