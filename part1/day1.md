@@ -115,13 +115,28 @@ esac
       if cmd 1
       then
             cmd2
-      elseif
+      elif
       then 
             cmd
        else
             cmd3
        fi
   ```
+  
+``` EG
+#!/bin/bash
+read a
+read b
+if((a == b))
+then
+ echo "X is equal to Y"
+elif((a > b))
+then
+  echo "X is greater than Y"
+else
+ echo "X is less than Y"
+ fi
+```
   ## identify that current user is root user
     ```
     'id -u' (shows number), 'id -un' (shows the user name).
