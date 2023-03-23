@@ -101,7 +101,8 @@ eg:
  - tr 'i' 'I' <file.txt
  - cat file.txt | tr " " " space "
  - [:lower:],[a-z],[:upper:], [A-Z], [:digit:], [0-9],[:space:]
-  -tr -d ','
+ - tr -d ','
+ - echo HTTP_CONNECTION_ESTABLISHMENT_DURATION| tr '[A-Z]' '[a-z]' 
   ```
 # tee command
 ```
