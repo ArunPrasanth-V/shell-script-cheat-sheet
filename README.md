@@ -88,7 +88,7 @@ eg:
     
      cut -d ':' -f 2 log.txt
 ```
-# AWK command :
+# AWK command : delimitor [space | tab]
 ```
  - awk '{ print $1,$3,NR,NF }' log.txt
  - awk '/Active/ { pint }'  #print the line contains Active.
