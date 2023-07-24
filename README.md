@@ -22,6 +22,7 @@
    - grep [options] "String/pattern" file/files
   
    ## Options :
+   -q = quit not display any ouput
    -i = ignore the case sensitivity
    -w = print only word matching
    -v = display the line that not having the word
